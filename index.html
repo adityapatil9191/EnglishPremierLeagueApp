@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>English Premier League</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- Custom styles for this template -->
+   
+
+  </head>
+
+  <body ng-app = "eplapp">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">English Premier League Statistics</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+           <p class="search" style="color: white;padding-top: 10px">Team Year/name/score :</p><input type="text" name="Search" ng-model = "search" >
+            
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#/stats">Team Wise Stats</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container-fluid background-wrap" ng-controller = "appCtrl">
+      <div class="row">
+        <div class="col-lg-12 ">
+          <video autoplay muted loop id="myVideo">
+          <source src="videowebsite.mp4" type="video/mp4">
+        </video>
+        
+
+      
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-md-12">
+           <h1 class = "content header">English Premier League Statistics</h1>
+           <div ng-view>
+             
+             
+           </div> 
+          
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- Bootstrap core JavaScript -->
+      <!--<script type="text/javascript" src = "vendor/angular/angular.min.js"></script>-->
+     <!-- <script type="text/javascript" src = "vendor/angular/angular-route.min.js"></script>-->
+     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>-->
+     <script type="text/javascript" src = "vendor/angular/angular.min.js"></script>
+      <script type="text/javascript" src = "vendor/angular/angular-route.min.js"> </script>
+     
+    <script type="text/javascript" src = "js/app.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+
+  </body>
+
+</html>

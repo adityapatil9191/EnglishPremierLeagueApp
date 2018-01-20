@@ -1,0 +1,42 @@
+<div class="content" ng-init = "onStatsLoad()">
+                
+            <table class="table table-striped content">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th><h2>Team Name</h2></th>
+                  <th>#</th>
+                  <th><h2>Total Matches Won</h2></th>
+                  <th>#</th>
+                  <th><h2>Total Matches Lost</h2></th>
+                  <th>#</th>
+                  <th><h2>Total Matches Drawn</h2></th>
+                  <th>#</th>
+                  <th><h2>Total Matches Played</h2></th>
+                  <th>#</th>
+                  <th><h2>Total Goals Scored</h2></th>
+
+                  
+                </tr>
+              </thead> 
+              <tbody>
+                <tr  ng-repeat = "team in statsarray">
+                <th>#</th>
+                  <th>{{team.teamname}}</th>
+                  <th>#</th>
+                  <th>{{team.matcheswon}}</th>
+                  <th>#</th>
+                  <th>{{team.matcheslost}}</th>
+                  <th>#</th>
+                  <th>{{team.matchesdrawn}}</th>
+                  <th>#</th>
+                  <th>{{team.matchesplayed}}</th>
+                  <th>#</th>
+                  <th>{{team.totalgoalsscored}}</th>
+                </tr>
+                
+              </tbody>
+          </table>
+
+          
+  </div>

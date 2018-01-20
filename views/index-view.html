@@ -1,0 +1,31 @@
+<div class="content">
+                
+            <table class="table table-striped content">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th><h2>Year</h2></th>
+                  <th>#</th>
+                  <th><h2>Team Names</h2></th>
+                  <th>#</th>
+                  <th><h2>Score</h2></th>
+                  <th>#</th>
+                  <th><h2>Details</h2></th>
+                  
+                </tr>
+              </thead>
+              <tbody ng-repeat = "match in individualmatches | filter:search">
+                <tr>
+                 <th>{{$index +1}}</th>
+                  <th>{{match.date}}</th>
+                  <th>#</th>
+                  <th>{{match.team1.name}} vs {{match.team2.name}}</th>
+                  <th>#</th>
+                  <th>{{match.score1}}-{{match.score2}} </th>
+                  <th>#</th>
+                  <th><a type = "button"  ng-click = "loadData(match.$$hashKey)"  ng-href = "#/match/{{match.$$hashKey}}" class="btn btn-default"><strong>Details</strong></a></th>
+                </tr>
+                
+              </tbody>
+          </table>
+  </div>
